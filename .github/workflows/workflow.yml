@@ -20,7 +20,7 @@ jobs:
     uses: actions/checkout@v2
     # Runs the code in an Apache/PHP web server container
     name: Startup web server
-    run: docker run -v $ (pwd):/var/www/html -dit --rm --name php php: apache
+    run: docker run -v $ (pwd):/var/www/html -dit --rm --name php php:apache
 
     # Run WASP Scan and create Issue of results
     name: OWASP ZAP Baseline Scan
